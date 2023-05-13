@@ -1,5 +1,5 @@
 import time
-import tkinter as tk
+
 
 
 
@@ -61,6 +61,7 @@ while(True):
     elif word == "add m":
         ms.append("m")
         mh = True
+        print("m aded")
 
     elif word == "m":
         print(ms[0])
@@ -79,8 +80,35 @@ while(True):
         try:
             ms.remove("m")
             mh = False
+            print("m remove")
         except:
             print("There is no 'm'")
+
+
+    elif word == "add adres$":
+        ms.append("adres$")
+        mh = True
+        print("adres$ aded")
+
+    elif word == "adres$":
+        print(ms[0])
+    
+    elif word == "write adres$" and mh == True:
+      print ("the code adres#$")
+
+
+
+    elif word == "adres#$":
+       print("hi, i live in #sr#e#")
+    
+   
+    elif word == "remove adres$":
+        try:
+            ms.remove("adres$")
+            mh = False
+            print("adres$ remove")
+        except:
+            print("There is no 'adres$'")
 
     elif word == "exit":
         break
